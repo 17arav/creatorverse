@@ -1,0 +1,48 @@
+/* Import Google Font 'Fredoka' */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+/* Import PicoCSS */
+@import '@picocss/pico';
+
+/* GLOBAL VARIABLES */
+:root {
+  --background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop'); /* Space Image */
+  --primary-color: #3b82f6; /* Bright Blue */
+  --card-bg: rgba(0, 0, 0, 0.7); /* See-through black */
+}
+
+/* BASE STYLES */
+body {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Fredoka', sans-serif; /* The rounded font */
+  min-height: 100vh;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+/* BUTTONS */
+button, .button {
+  background-color: var(--primary-color);
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Remove default link underlines */
+a {
+  text-decoration: none;
+}
